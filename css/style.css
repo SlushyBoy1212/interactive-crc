@@ -98,7 +98,8 @@ textarea {
   }
   a,
   a:visited {
-    text-decoration: underline;
+    text-decoration: none;
+    color: var(--text);
   }
 
   a[href]::after {
