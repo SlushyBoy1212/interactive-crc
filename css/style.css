@@ -1,17 +1,18 @@
 :root {
-    --bg: #0f1220; /* fixed this */
-    --text: #e5e7eb;
+  --bg: #0f1220; /* fixed this */
+  --text: #e5e7eb;
+  --gridcolor: #a00
 }
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  height: 50%;
 }
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
-
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -74,7 +75,6 @@ textarea {
   content: "";
   display: table;
 }
-
 .clearfix::after {
   clear: both;
 }
@@ -160,6 +160,15 @@ body {
   height: 100%;
   width: 100%;
 }
-html {
-  height: 100%;
+.grid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 16px;
+}
+.grid3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 16px;
 }
